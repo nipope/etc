@@ -9,7 +9,7 @@
     },
     "resources": [
         {
-            "name": [variables('vaultName')],
+            "name": "[variables('vaultName')]",
             "type": "Microsoft.KeyVault/vaults",
             "apiVersion": "2018-02-14",
             "location": "centralus",
