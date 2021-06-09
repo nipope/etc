@@ -1,1 +1,6 @@
-
+name: Nested_Dogfood
+version: 1.0.0
+description: References a nested template valid in Dogfood
+engine:
+  type: ARM
+  templatePath: azuredeploy.json
