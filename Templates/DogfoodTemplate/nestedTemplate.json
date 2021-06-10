@@ -2,9 +2,12 @@
     "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "demoString": {
+            "type": "string"
+        },
     },
     "variables": {
-        "resourceNamePrefix": "[take(uniqueString(resourceGroup().id), 3)]",
+        "resourceNamePrefix": "[parameters('demoString')]",
         "vaultName": "[toLower(concat(variables('resourceNamePrefix'), '-', take(uniqueString(resourceGroup().id), 6), '-vt'))]",
     },
     "resources": [
