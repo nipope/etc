@@ -8,23 +8,23 @@
     },
     "variables": {},
     "resources": [
-		{
-            "name": "NestOne",
-            "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2020-10-01",
-            "dependsOn": [],
-            "properties": {
-                "mode": "Incremental",
-                "templateLink": {
-                    "relativePath": "./nestedTemplate.json",
-                    "contentVersion": "1.0.0.0"
-                },
+	{
+	    "name": "NestOne",
+	    "type": "Microsoft.Resources/deployments",
+	    "apiVersion": "2020-10-01",
+	    "dependsOn": [],
+	    "properties": {
+		"mode": "Incremental",
+		"templateLink": {
+		    "relativePath": "./nestedTemplate.json",
+		    "contentVersion": "1.0.0.0"
+		},
 	      "parameters": {
 		"demoString": {
 		  "value": "[parameters('demoString')]"
 		}
-            }
-        }
+	    }
+        },
     ],
     "outputs": {}
 }
