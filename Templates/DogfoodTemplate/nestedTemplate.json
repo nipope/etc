@@ -15,7 +15,7 @@
             "name": "[variables('resourceNamePrefix')]",
             "type": "Microsoft.KeyVault/vaults",
             "apiVersion": "2018-02-14",
-            "location": "centralus",
+            "location": "northcentralus",
             "properties": {
               "tenantId": "f686d426-8d16-42db-81b7-ab578e110ccd",
               "sku": {
