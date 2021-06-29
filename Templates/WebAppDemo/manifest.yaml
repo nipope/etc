@@ -1,6 +1,6 @@
+name: WebAppDemo
 version: 1.0.0
 description: A very good template.
-name: WebAppDemo
 engine:
-  type: Arm
+  type: ARM
   templatePath: azuredeploy.json
